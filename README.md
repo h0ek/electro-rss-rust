@@ -9,6 +9,8 @@ To ulepszona wersja poprzedniego projektu w Pythonie:
 - cache + miniatury
 - filtrowanie po latach i kategorii
 
+![Electro RSS](screenshot.webp)
+
 ## Funkcje
 - RSS parser (bez API)
 - filtrowanie:
