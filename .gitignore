@@ -1,6 +1,89 @@
+# 🔧 Rust
 /target
+
+# 🐍 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+
+# 🧪 Python tools
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# 🐚 Bash / Shell
+*.sh.log
+
+# 🌐 Web / PHP / nginx
+vendor/
+node_modules/
+composer.lock
+npm-debug.log
+yarn.lock
+
+# 🧾 Logs / temp
 *.log
 *.tmp
+*.cache
+
+# 🐧 System
 .DS_Store
-.idea/
+Thumbs.db
+
+# 💻 IDE
 .vscode/
+.idea/
+*.code-workspace
+
+# 🔐 Env / secrets
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.pfx
+
+# 🗂️ Backup / trash
+*.bak
+*.old
+*.swp
+*.swo
+*~
+
+# 📦 Build artifacts
+dist/
+build/
+out/
+
+# 🧪 Coverage
+coverage/
+*.prof
+htmlcov/
+
+# 🖼️ Cache / runtime data
+.cache/
+tmp/
+temp/
+
+# 🗃️ DB / dumps
+*.sql
+*.sqlite
+*.db
+
+# 🧰 Pentest / tooling
+loot/
+reports/
+screenshots/
+*.pcap
+*.cap
+*.har
+
+# 🔑 GPG / crypto
+*.asc
+*.gpg
