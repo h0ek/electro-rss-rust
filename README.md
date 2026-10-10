@@ -1,59 +1,67 @@
 # Electro RSS (Rust)
-Aplikacja desktopowa do listowania najnowszych materiałów z electro-torrent.pl za pomocą RSS.
 
-Jestem leniwy i nie chce mi się przeglądać całej strony w poszukiwaniu materiałów z 2024, 2025 i 2026, a tylko takie mnie interesują. Jeśli też jesteś leniwy jak ja — ta aplikacja zrobi to za Ciebie.
+A desktop application for browsing the latest releases from electro-torrent.pl using RSS.
 
-To ulepszona wersja poprzedniego projektu w Pythonie:
-- szybsza
-- GUI w GTK4 / libadwaita
-- cache + miniatury
-- filtrowanie po latach i kategorii
+I'm lazy, and I don't feel like browsing the entire website looking for releases from 2024, 2025, and 2026. Those are the only ones I'm interested in. If you're as lazy as I am, this application will do the work for you.
+
+This is an improved version of my previous Python project:
+- Faster performance
+- GTK4 / libadwaita GUI
+- Data caching and thumbnails
+- Filtering by year and category
 
 ![Electro RSS](screenshot.webp)
 
-## Funkcje
-- RSS parser (bez API)
-- filtrowanie:
-  - po tytule
-  - po roku (2024 / 2025 / 2026)
-  - po kategorii (Film / Seriale)
-- cache danych + miniatur
-- statystyki cache (rozmiar / ilość)
-- otwieranie linków w przeglądarce
+## Features
 
-## Wymagania
+- RSS feed parser (no API required)
+- Filtering by:
+  - Title
+  - Year (2024 / 2025 / 2026)
+  - Category (Movies / TV Series)
+- Data and thumbnail caching
+- Cache statistics (size / item count)
+- Open links in your default web browser
+
+## Requirements
+
 ### Fedora
 ```bash
 sudo dnf install gtk4-devel libadwaita-devel openssl-devel pkgconf-pkg-config gcc clang
 ```
+
 ### Debian / Ubuntu
 ```bash
 sudo apt install libgtk-4-dev libadwaita-1-dev pkg-config build-essential
 ```
-### Arch
+
+### Arch Linux
 ```bash
 sudo pacman -S gtk4 libadwaita base-devel
 ```
+
 ## Build
+
 ```bash
 cargo build --release
 ```
-## Uruchamianie
-Dev:
+
+## Run
+
+Development:
 ```bash
 cargo run
 ```
+
 Release:
 ```bash
 ./target/release/electro-rss-rust
 ```
 
 ## Cache
-Dane i miniatury zapisują się w:
+
+Data and thumbnails are stored in:
+
 ```bash
 ~/.cache/electro_rss_rust/
 ```
-
-## Poprzednia wersja (Python)
-Stara wersja projektu (Python + GTK3):
-https://github.com/h0ek/electro-rss
