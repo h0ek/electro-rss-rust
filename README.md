@@ -1,4 +1,4 @@
-# Electro RSS (Rust)
+# Electro RSS
 
 A GTK4/libadwaita desktop RSS reader for browsing recent movie and TV-series releases from electro-torrent.pl without navigating the entire website.
 
@@ -73,6 +73,4 @@ Or launch the release executable:
 
 **Clear history** deletes the locally stored entries and thumbnails. It does not change the selected RSS sources. Clearing saved entries is not needed for routine refreshes.
 
-## Previous Python version
 
-[Electro RSS — Python/GTK3](https://github.com/h0ek/electro-rss)
