@@ -16,6 +16,8 @@ pub struct FeedItem {
     pub pub_date: DateTime<Utc>,
     pub season: String,
     pub episode: String,
+    #[serde(default)]
+    pub original_polish: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, Default)]

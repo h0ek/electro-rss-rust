@@ -25,9 +25,9 @@ pub fn log_error(msg: &str) {
 }
 
 fn write_line(level: &str, msg: &str) {
-    if let Some(lock) = LOG_FILE.get() {
-        if let Ok(mut file) = lock.lock() {
-            let _ = writeln!(file, "[{}] {}", level, msg);
-        }
+    if let Some(lock) = LOG_FILE.get()
+        && let Ok(mut file) = lock.lock()
+    {
+        let _ = writeln!(file, "[{}] {}", level, msg);
     }
 }
